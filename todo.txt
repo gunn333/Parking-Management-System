@@ -1,0 +1,10 @@
+18th november,2024
+
+Started a react project name PARKING MANAGEMENT , todays days was to start it with the client side.
+1. Made navbar,ParkingSpace , Wallet and Footer
+
+Navbar--Booking,Parking,Charging,Wallet and login/Signup
+ParkingSpace-- 2wheelers,3wheelers,4wheelers
+Wallet--Added function to add 300,500 and 1000 ruppees
+Footer--Created about us .
+
