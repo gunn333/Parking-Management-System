@@ -33,7 +33,7 @@ dotenv.config(); // Load environment variables
 const app = express();
 
 // Connect to MongoDB
-connectDb(); // Call the function once
+connectDb();
 
 // Middleware
 app.use(express.json());
@@ -42,9 +42,12 @@ app.use(cors()); // Enable CORS for frontend communication
 // Routes
 const parkingRoutes = require('./routes/parkingRoutes');
 const walletRoutes = require('./routes/walletRoutes');
+const userRoutes = require('./routes/userRoute');
+
 
 app.use('/api/parking', parkingRoutes);
 app.use('/api/wallet', walletRoutes);
+app.use('/api/user', userRoutes);  
 
 // Routes
 app.get('/', (req, res) => {
